@@ -36,7 +36,7 @@
         var e = T.createElement(i);
         var l = I.location;
         e.async = true;
-        e.src = "//"+(_||c)+'/client/inject.min.js';
+        e.src = (_||c)+'/client/inject.min.js';
         h.insertBefore(e, h.firstChild);
         I.iticks.call = function(a, b) {
             b = b || {};
