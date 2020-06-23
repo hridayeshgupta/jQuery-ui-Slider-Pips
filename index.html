@@ -30,27 +30,11 @@
         <link rel="stylesheet" href="dist/css/app.min.css" />
         <link rel="manifest" href="/manifest.json" />
         <script> window._izq = window._izq || []; window._izq.push(["init"]); </script>
+                    
 <script type='text/javascript'>
-    (function(I, _, T, i, c, k, s) {
-        if(I.iticks) return;
-        I.iticks = {host:c, settings:s, clientId:k, cdn:_, queue:[]};
-        var h = T.head || T.documentElement;
-        var e = T.createElement(i);
-        var l = I.location;
-        e.async = true;
-        e.src = (_||c)+'/client/inject.min.js';
-        h.insertBefore(e, h.firstChild);
-        I.iticks.call = function(a, b) {
-            b = b || {};
-            try {
-                b._meta = {url:l.href+l.hash, time:Date.now()};
-            }catch(e) {
-                b = {_meta:{url:l.href+l.hash, time:Date.now()}};
-            }
-            I.iticks.queue.push([a, b]);
-        };
-    })(window, 'https://d361nn0tbycf2u.cloudfront.net', document, 'script', 'https://app.sandbox.intelliticks.com', 'DXN46Scxs4QqMFc6K_c', {});
-        </script>
+	(function(I, _, T, i, c, k, s) {if(I.iticks) return;I.iticks = {host:c, settings:s, clientId:k, cdn:_, queue:[]};var h = T.head || T.documentElement;var e = T.createElement(i);var l = I.location;e.async = true;e.src = (_||c)+'/client/inject-v2.min.js';h.insertBefore(e, h.firstChild);I.iticks.call = function(a, b) {I.iticks.queue.push([a, b]);};})(window, 'https://cdn.intelliticks.com/prod/common', document, 'script', 'https://app.intelliticks.com', '5gXta9vSnKuP8XN64_c', {});
+</script>
+                
             <script>
     (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
     function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
